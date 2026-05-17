@@ -7,7 +7,7 @@ func greetings() {
 	fmt.Println("      PALINDROME CHECKER TOOL")
 	fmt.Println("=====================================")
 	fmt.Println()
-	fmt.Println("Welcome!")
+	fmt.Println("Welcome😊!")
 	fmt.Println()
 	fmt.Println("This CLI tool checks whether a word or sentence")
 	fmt.Println("is a palindrome.")

@@ -1,8 +1,8 @@
 package main
 
-func isPalindrome(input, reversed string) (bool, string) {
+func isPalindrome(input, reversed string) bool {
 	if input == reversed {
-		return true, "Palindrome"
+		return true
 	}
-	return false, "not a palindrome"
+	return false
 }

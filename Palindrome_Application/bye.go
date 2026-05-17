@@ -8,5 +8,5 @@ func goodbye() {
 	fmt.Println("      Palindrome Checker")
 	fmt.Println("=====================================")
 	fmt.Println()
-	fmt.Println("Session terminated successfully.")
+	fmt.Println("Session terminated successfully😍.")
 }

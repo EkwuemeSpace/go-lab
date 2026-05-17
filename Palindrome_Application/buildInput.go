@@ -4,7 +4,6 @@ import "strings"
 
 func cleanInput(input string) string {
 	var newInput strings.Builder
-
 	input = strings.ToLower(input)
 	for _, ch := range input {
 		if ch == ' ' {

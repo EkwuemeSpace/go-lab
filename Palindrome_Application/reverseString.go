@@ -3,13 +3,10 @@ package main
 import "strings"
 
 func reverseInput(input string) string {
-	var builder strings.Builder
+	runes := []rune(input)
 
-	for i := len(input) - 1; i >= 0; i-- {
-		if string(input[i]) == " " {
-			continue
-		}
-		builder.WriteString(string(input[i]))
+	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
+		runes[i], runes[j] = runes[i], runes[i]
 	}
-	return builder.String()
+	return strings.ReplaceAll(string(runes), " ", "")
 }
