@@ -6,7 +6,7 @@ This project focuses on building clean, reliable CLI applications while practici
 
 ---
 
-## 📌 What is an Anagram?
+## What is an Anagram?
 
 An anagram is when two words or phrases contain the same characters, just arranged in a different order.
 
@@ -17,7 +17,7 @@ An anagram is when two words or phrases contain the same characters, just arrang
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - Interactive command-line interface
 - Accepts two user inputs for comparison
@@ -29,7 +29,7 @@ An anagram is when two words or phrases contain the same characters, just arrang
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ```bash
 go run .
@@ -37,7 +37,7 @@ go run .
 
 ---
 
-## 💡 Usage Flow
+## Usage Flow
 
 1. Start the application
 2. Enter the first word or sentence
@@ -49,7 +49,7 @@ go run .
 
 ---
 
-## 🚪 Exit Command
+## Exit Command
 
 To terminate the program, enter:
 
@@ -59,7 +59,7 @@ To terminate the program, enter:
 
 ---
 
-## ⚠️ Input Constraints
+## Input Constraints
 
 The application only accepts:
 
@@ -71,7 +71,7 @@ Any special characters (e.g. `@`, `#`, `!`) will be rejected.
 
 ---
 
-## 🧠 Example Output
+## Example Output
 
 ```
 Please enter a word: listen
@@ -86,7 +86,7 @@ invalid character detected: '@'
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 .
@@ -102,7 +102,7 @@ invalid character detected: '@'
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Go (Golang)
 - bufio (input handling)
@@ -111,7 +111,7 @@ invalid character detected: '@'
 
 ---
 
-## 📈 Future Improvements
+## Future Improvements
 
 - Ignore punctuation automatically
 - Add unit tests for core logic
@@ -121,7 +121,7 @@ invalid character detected: '@'
 
 ---
 
-## 👋 Author
+## Author
 
 Built as a Go CLI project to demonstrate practical experience in:
 - building command-line tools
