@@ -10,14 +10,18 @@ import (
 
 func main() {
 	greetings()
+
 	for {
-		fmt.Print("Please enter a word or sentence: ")
+		fmt.Print(cyan + "Please enter a word or sentence: " + reset)
+
 		reader := bufio.NewReader(os.Stdin)
+
 		input, err := reader.ReadString('\n')
 		if err != nil {
-			fmt.Fprintln(os.Stderr, err)
+			fmt.Fprintln(os.Stderr, red+err.Error()+reset)
 			continue
 		}
+
 		input = strings.TrimSpace(input)
 
 		if input == "0" {
@@ -28,7 +32,7 @@ func main() {
 
 		err = validator(input)
 		if err != nil {
-			fmt.Fprintln(os.Stderr, err)
+			fmt.Fprintln(os.Stderr, red+err.Error()+reset)
 			continue
 		}
 
@@ -36,9 +40,9 @@ func main() {
 		reverse := reverseInput(cleaner)
 
 		if isPalindrome(cleaner, reverse) {
-			fmt.Println("Palindrome ✔️")
+			fmt.Println(green + "Palindrome ✔️" + reset)
 		} else {
-			fmt.Println("Not a palindrome❌")
+			fmt.Println(red + "Not a palindrome ❌" + reset)
 		}
 	}
 }
