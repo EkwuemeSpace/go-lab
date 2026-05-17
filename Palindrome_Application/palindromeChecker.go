@@ -1,8 +1,6 @@
 package main
 
+// isPalindrome checks if input equals its reverse.
 func isPalindrome(input, reversed string) bool {
-	if input == reversed {
-		return true
-	}
-	return false
+	return input == reversed
 }

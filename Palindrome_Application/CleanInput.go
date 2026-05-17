@@ -2,6 +2,7 @@ package main
 
 import "strings"
 
+// cleanInput converts input to lowercase and removes spaces.
 func cleanInput(input string) string {
 	var newInput strings.Builder
 	input = strings.ToLower(input)

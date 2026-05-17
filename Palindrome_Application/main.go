@@ -1,3 +1,4 @@
+// Package main implements a palindrome checker CLI application.
 package main
 
 import (
