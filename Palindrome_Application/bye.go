@@ -10,6 +10,6 @@ func goodbye() {
 
 	fmt.Println()
 	fmt.Println(green + "Session terminated successfully 😍" + reset)
-	fmt.Println(yellow + "Goodbye and happy coding!" + reset)
+	fmt.Println(yellow + "Goodbye buddy!" + reset)
 	fmt.Println()
 }
