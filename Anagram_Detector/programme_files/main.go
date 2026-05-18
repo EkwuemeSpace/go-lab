@@ -22,11 +22,7 @@ func main() {
 			continue
 		}
 
-		if err := validator(firstWord); err != nil {
-			fmt.Fprintln(os.Stderr, red+err.Error()+reset)
-			continue
-		}
-		if err = validator(secondWord); err != nil {
+		if err := validatorInput(firstWord, secondWord); err != nil {
 			fmt.Fprintln(os.Stderr, red+err.Error()+reset)
 			continue
 		}
