@@ -9,10 +9,3 @@ func validatorInput(first, second string) error {
 	}
 	return nil
 }
-
-func isEmptyInput(first, second string) bool {
-	if !(first == "" || second == "") {
-		return true
-	}
-	return false
-}

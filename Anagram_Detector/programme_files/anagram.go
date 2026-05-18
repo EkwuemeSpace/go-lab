@@ -6,6 +6,9 @@ func isAnagram(first, second string) (bool, string) {
 	if len(first) != len(second) {
 		return false, "Not an Anagram❌"
 	}
+	if len(first) == 0 || len(second) == 0 {
+		return false, "input cannot be empty❌"
+	}
 
 	first = strings.ToLower(first)
 	second = strings.ToLower(second)

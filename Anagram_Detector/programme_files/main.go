@@ -26,10 +26,6 @@ func main() {
 			fmt.Fprintln(os.Stderr, red+err.Error()+reset)
 			continue
 		}
-		if !isEmptyInput(firstWord, secondWord) {
-			fmt.Fprintln(os.Stderr, red+"error: input cannot be empty"+reset)
-			continue
-		}
 
 		Output, note := isAnagram(firstWord, secondWord)
 
